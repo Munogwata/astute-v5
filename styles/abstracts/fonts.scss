@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+//weights
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+
+//the typeface
+$montserrat: 'Montserrat',
+    sans-serif;
+$ibm-plex-sans: 'IBM Plex Sans',
+    sans-serif;
+
+//links
+@mixin default-menu-links {
+    font-size: 28px;
+    font-weight: $regular;
+    line-height: 32.34px;
+    text-decoration: none;
+}
+
+@mixin small-menu-links {
+    font-size: 20px;
+    font-weight: $regular;
+    line-height: 32.34px;
+    text-decoration: none;
+}
+
+@mixin logo-text {
+    font-weight: $bold;
+    font-family: $ibm-plex-sans;
+    font-size: 45px;
+    line-height: 58.5px;
+    text-decoration: none;
+}
+
+//the body fonts
+@mixin medium-body-bold {
+    font-weight: $bold;
+    font-size: 16px;
+    line-height: 19.5px;
+    font-family: $montserrat;
+}
+
+@mixin small-body-regular {
+    font-weight: $regular;
+    font-size: 14px;
+    line-height: 17.07px;
+    font-family: $montserrat;
+}
+
+@mixin small-body-bold-underlined {
+    font-weight: $bold;
+    font-size: 14px;
+    line-height: 17.07px;
+    font-family: $montserrat;
+    text-decoration: underline;
+}

@@ -1,0 +1,46 @@
+@use '../../../../styles/abstracts/index.scss' as general;
+
+.updateBar {
+    background-color: general.$neutral;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.updateBar-contentsContainer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: general.$small ;
+}
+
+.updateBar-heading {
+    margin-top: general.$small;
+    margin-bottom: general.$tiny;
+    text-align: center;
+    @include general.medium-body-bold;
+    color: general.$primary-blue;
+}
+
+.updateBar-contents {
+    @include general.small-body-regular;
+    color: general.$black;
+
+    text-align: center;
+
+}
+
+.updateBar-contents--highlighted {
+    @include general.small-body-bold-underlined;
+    color: general.$primary-blue;
+}
+
+@media (max-width:700px) {
+
+    .updateBar-contentsContainer {
+        width: 325px;
+
+    }
+
+}

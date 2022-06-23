@@ -1,0 +1,143 @@
+@use '../../../../styles/abstracts/index.scss' as general;
+
+
+@mixin navbar-links {
+    @include general.default-menu-links;
+    color: general.$black;
+}
+
+.navbar-links--Make {
+    @include navbar-links;
+}
+
+
+.navbar-links--Keep {
+    @include navbar-links;
+}
+
+.navbar-links--Grow {
+    @include navbar-links;
+}
+
+.navbar-links--Money {
+    @include navbar-links;
+}
+
+.navbarContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.navbarContainer-linksContainer {
+    width: 1017px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+
+.navbar-links--logo {
+    @include general.logo-text;
+    color: general.$black;
+}
+
+
+.burgerIcon {
+    display: none;
+    position: relative;
+}
+
+.dropdownLinks {
+    display: none;
+    @include general.small-menu-links;
+}
+
+.burger-icon {
+    width: 25px;
+    height: 25px;
+
+}
+
+.burgerIcon:hover {
+    .dropdownLinks {
+        display: flex;
+        flex-direction: column;
+        color: general.$black;
+        @include general.small-menu-links;
+
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .burger-icon {
+        margin-top: 125px;
+    }
+
+    .dropdownLinks--Keep:hover {
+        color: general.$orange500;
+    }
+
+    .dropdownLinks--Make:hover {
+        color: general.$lavendar500;
+    }
+
+    .dropdownLinks--Grow:hover {
+        color: general.$green800;
+    }
+
+    .dropdownLinks--Money:hover {
+        color: general.$primary-blue;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+@media (max-width: 1017px) {
+
+    .navbarContainer-linksContainer {
+        width: general.$tablet;
+
+    }
+
+}
+
+@media (max-width: general.$tablet) {
+    .navbarContainer-linksContainer {
+        width: 92.5%;
+        justify-content: space-between;
+
+    }
+
+    .navbar-links--Make {
+        display: none;
+    }
+
+    .navbar-links--Keep {
+        display: none;
+    }
+
+    .navbar-links--Grow {
+        display: none;
+    }
+
+    .navbar-links--Money {
+        display: none;
+    }
+
+    .burgerIcon {
+        display: flex;
+    }
+
+}
