@@ -13,6 +13,8 @@ import { GrowComponent } from './pages/grow/grow.component';
 import { AboutComponent } from './pages/about/about.component';
 import { MobileScreenComponent } from './components/mobile-screen/mobile-screen.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,8 @@ import { MobileScreenComponent } from './components/mobile-screen/mobile-screen.
     KeepComponent,
     GrowComponent,
     AboutComponent,
-    MobileScreenComponent
+    MobileScreenComponent,
+
   ],
   imports: [
     BrowserModule,
