@@ -1,0 +1,94 @@
+@use '../../../../styles/abstracts/index.scss' as general;
+
+.mobileScreen-framework {
+    width: 414px;
+    height: 896px;
+    border-radius: 25px;
+    background-color: general.$neutral;
+    border: 1px solid general.$black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.signal-bar {
+    margin-top: 9px;
+    width: 390px;
+    height: 44px;
+}
+
+a {
+    text-decoration: none;
+    color: general.$black;
+    @include general.screen-links;
+}
+
+.menu-bar {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: general.$default;
+
+}
+
+
+.content {
+    display: flex;
+    height: 740px;
+    width: 100%;
+    border-bottom: 1px solid general.$black;
+    background-color: general.$neutral;
+}
+
+.makeScreenActive {
+    color: general.$lavendar500;
+    text-decoration: underline;
+}
+
+.keepScreenActive {
+    color: general.$orange500;
+    text-decoration: underline;
+}
+
+.growScreenActive {
+    color: general.$green800;
+    text-decoration: underline;
+}
+
+.moneyScreenActive {
+    color: general.$primary-blue;
+    text-decoration: underline;
+}
+
+
+//responsive tablet
+
+@media (max-width: general.$desktop-breakpoint) {
+    .mobileScreen-framework {
+        width: 405.7px;
+        height: 878px;
+
+
+    }
+
+    .signal-bar {
+        width: 382.17px;
+        height: 43.12px;
+    }
+}
+
+//resposnive mobile
+
+@media (max-width: general.$mobile) {
+    .mobileScreen-framework {
+        width: 273.07px;
+        height: 591px;
+    }
+
+    .signal-bar {
+        width: 257.24px;
+        height: 29.02px;
+    }
+}

@@ -1,1 +1,18 @@
-<p>mobile-screen works!</p>
+<div class="mobileScreen-framework">
+
+    <span class="signal-bar">
+        <img src="../../../assets/mobile-screen/Status Bar.png" alt="" class="signal-bar">
+    </span>
+
+    <span class="content">
+        test
+    </span>
+
+    <span class="menu-bar">
+        <a routerLink="/make" class="screen-link" routerLinkActive="makeScreenActive">Make</a>
+        <a routerLink="/keep" class="screen-link" routerLinkActive="keepScreenActive">Keep</a>
+        <a routerLink="/grow" class="screen-link" routerLinkActive="growScreenActive">Grow</a>
+        <a routerLink="/" class="screen-link" routerLinkActive="moneyScreenActive"
+            [routerLinkActiveOptions]="{exact:true}">Your Money</a>
+    </span>
+</div>
