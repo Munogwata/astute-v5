@@ -1,0 +1,25 @@
+@use '../../styles/abstracts/index.scss' as general;
+
+.page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.pageLayout {
+    display: flex;
+    justify-content: space-between;
+    width: 1017px;
+    padding-top: general.$medium-doubled;
+}
+
+
+@media (max-width: 1017px) {
+
+    .pageLayout {
+
+        width: 90%;
+
+    }
+}

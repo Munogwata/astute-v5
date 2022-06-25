@@ -23,8 +23,9 @@ $ibm-plex-sans: 'IBM Plex Sans',
 @mixin small-menu-links {
     font-size: 20px;
     font-weight: $regular;
-    line-height: 32.34px;
     text-decoration: none;
+
+
 }
 
 @mixin logo-text {
@@ -34,6 +35,15 @@ $ibm-plex-sans: 'IBM Plex Sans',
     line-height: 58.5px;
     text-decoration: none;
 }
+
+@mixin logo-text-small {
+    font-weight: $bold;
+    font-family: $ibm-plex-sans;
+    font-size: 30px;
+    line-height: auto;
+    text-decoration: none;
+}
+
 
 //the body fonts
 @mixin medium-body-bold {

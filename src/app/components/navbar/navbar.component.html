@@ -1,20 +1,47 @@
 <div class="navbarContainer">
     <div class="navbarContainer-linksContainer">
-        <a href="" class="navbar-links--logo">astute</a>
-        <a href="" class="navbar-links--Make">Make</a>
-        <a href="" class="navbar-links--Keep">Keep</a>
-        <a href="" class="navbar-links--Grow">Grow</a>
-        <a href="" class="navbar-links--Money">Your Money</a>
-        <a href="" class="burgerIcon">
-            <ul class="links">
-                <li> <img src="../../../assets/icons/menu.png" alt="" class="burger-icon">
-                    <ul class="dropdownLinks">
-                        <li class="dropdownLinks--Make">Make </li>
-                        <li class="dropdownLinks--Keep">Keep</li>
-                        <li class="dropdownLinks--Grow">Grow</li>
-                        <li class="dropdownLinks--Money"> Your Money</li>
-                    </ul>
-                </li>
-            </ul>
-        </a>
+        <a routerLink='/about-us' routerLinkActive="aboutActive-link" class="navbar-links--logo">astute</a>
+        <a routerLink='/make' routerLinkActive="makeActive-link" class="navbar-links--Make">Make</a>
+        <a routerLink='/keep' routerLinkActive='keepActive-link' class="navbar-links--Keep">Keep</a>
+        <a routerLink='/grow' routerLinkActive="growActive-link" class="navbar-links--Grow">Grow</a>
+        <a routerLink='/' routerLinkActive='moneyActive-link' [routerLinkActiveOptions]="{exact:true}"
+            class="navbar-links--Money">Your Money</a>
+
+
+        <span class="hamburger-box">
+            <span class="button-box">
+                <button *ngIf="dropdownClose" class="hamburger-icon" (click)="toggleDropDown()">
+                    <img src="../../../assets/icons/menu.png" alt="" class="burger-icon">
+                </button>
+                <button *ngIf="dropdownOpen" class="hamburger-icon" (click)="toggleDropDown()">
+                    <img src="../../../assets/icons/close.png" alt="" class="burger-icon">
+                </button>
+            </span>
+
+
+
+
+
+
+
+            <span *ngIf='dropdownOpen' class="hamburger-menu"><a routerLink='/about-us'
+                    routerLinkActive="aboutActive-link" class="hamburger-logo--small">astute</a>
+
+
+                <a routerLink='/make' routerLinkActive=" makeActive-link">Make</a>
+                <a routerLink='/keep' routerLinkActive='keepActive-link'>Keep</a>
+                <a routerLink='/grow' routerLinkActive="growActive-link">Grow</a>
+                <a routerLink='/' routerLinkActive='moneyActive-link' [routerLinkActiveOptions]="{exact:true}">Your
+                    Money</a>
+
+            </span>
+        </span>
+
+
+
     </div>
+
+
+
+
+</div>

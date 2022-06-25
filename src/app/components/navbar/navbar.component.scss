@@ -24,10 +24,12 @@
 }
 
 .navbarContainer {
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: center;
     background-color: white;
+    margin: 0px;
+
 }
 
 .navbarContainer-linksContainer {
@@ -44,81 +46,94 @@
     color: general.$black;
 }
 
-
-.burgerIcon {
-    display: none;
-    position: relative;
+.navbar-links--logo:hover {
+    color: general.$primary-blue;
 }
 
-.dropdownLinks {
-    display: none;
-    @include general.small-menu-links;
-}
 
-.burger-icon {
-    width: 25px;
-    height: 25px;
 
-}
 
-.burgerIcon:hover {
-    .dropdownLinks {
-        display: flex;
-        flex-direction: column;
-        color: general.$black;
-        @include general.small-menu-links;
-
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .burger-icon {
-        margin-top: 125px;
-    }
-
-    .dropdownLinks--Keep:hover {
-        color: general.$orange500;
-    }
-
-    .dropdownLinks--Make:hover {
-        color: general.$lavendar500;
-    }
-
-    .dropdownLinks--Grow:hover {
-        color: general.$green800;
-    }
-
-    .dropdownLinks--Money:hover {
-        color: general.$primary-blue;
-    }
-}
 
 ul {
     list-style-type: none;
+    padding: 0px;
+    margin-right: general.$default;
 }
 
 a {
     text-decoration: none;
+    color: general.$black;
+}
+
+a:hover {
+    color: general.$primary-blue;
+}
+
+//active links
+
+.makeActive-link {
+    color: general.$lavendar500;
+}
+
+.keepActive-link {
+    color: general.$orange500;
+}
+
+
+.growActive-link {
+    color: general.$green200;
+}
+
+.moneyActive-link {
+    color: general.$primary-blue;
+}
+
+.aboutActive-link {
+    text-decoration: underline;
 }
 
 
 
+
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger-link {
+    display: none;
+}
+
+.hamburger-box {
+    display: none;
+}
+
+
+.button-box {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+//responsive design and components
 
 @media (max-width: 1017px) {
 
-    .navbarContainer-linksContainer {
-        width: general.$tablet;
-
+    .hamburger-icon {
+        background-color: white;
+        border: none;
+        margin: 0px;
+        padding: 0px;
     }
 
-}
-
-@media (max-width: general.$tablet) {
     .navbarContainer-linksContainer {
-        width: 92.5%;
-        justify-content: space-between;
-
+        height: fit-content;
     }
+
+    .aboutActive-link {
+        text-decoration: underline;
+    }
+
 
     .navbar-links--Make {
         display: none;
@@ -136,8 +151,55 @@ a {
         display: none;
     }
 
-    .burgerIcon {
+    .navbarContainer-linksContainer {
+        width: 90%;
+        height: fit-content;
         display: flex;
+        justify-content: space-between;
+        align-items: center
     }
+
+
+    .navbar-links--logo {
+        display: none;
+
+    }
+
+    .hamburger-menu {
+        display: flex;
+
+        flex-direction: column;
+        @include general.small-menu-links;
+        color: general.$black;
+    }
+
+
+
+    .hamburger-linkActive--make {
+        color: general.$lavendar500
+    }
+
+    .hamburger-link {
+
+        display: flex;
+
+        color: general.$black;
+        @include general.small-menu-links;
+        text-align: right;
+    }
+
+    .hamburger-box {
+        display: flex;
+        margin-top: 10px;
+        flex-direction: column;
+        width: 105px;
+
+    }
+
+    .hamburger-logo--small {
+        @include general.logo-text-small;
+
+    }
+
 
 }
