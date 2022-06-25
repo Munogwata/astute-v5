@@ -67,10 +67,31 @@ $ibm-plex-sans: 'IBM Plex Sans',
     font-family: $montserrat;
 }
 
+@mixin small-body-bold {
+    font-weight: $bold;
+    font-size: 14px;
+    line-height: 17.07px;
+    font-family: $montserrat;
+}
+
 @mixin small-body-bold-underlined {
     font-weight: $bold;
     font-size: 14px;
     line-height: 17.07px;
     font-family: $montserrat;
     text-decoration: underline;
+}
+
+@mixin default-body-bold {
+    font-weight: $bold;
+    font-size: 16px;
+    line-height: 19.5px;
+    font-family: $montserrat;
+}
+
+@mixin large-body-bold {
+    font-weight: $bold;
+    font-size: 18px;
+    line-height: 21.94px;
+    font-family: $montserrat;
 }

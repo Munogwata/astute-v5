@@ -1,0 +1,21 @@
+@use '../../styles/abstracts/index.scss' as general;
+
+.screen-Heading {
+    @include general.large-body-bold;
+    margin-bottom: 24px;
+    margin-top: 44px;
+    color: general.$black;
+}
+
+.screen-defaultLabels {
+    @include general.default-body-bold;
+    color: general.$primary-blue;
+}
+
+.screen-smallLabels {
+    @include general.small-body-bold;
+}
+
+.screen-bodyContent {
+    @include general.small-body-regular;
+}

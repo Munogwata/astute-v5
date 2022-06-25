@@ -12,6 +12,10 @@ import { KeepComponent } from './pages/keep/keep.component';
 import { GrowComponent } from './pages/grow/grow.component';
 import { AboutComponent } from './pages/about/about.component';
 import { MobileScreenComponent } from './components/mobile-screen/mobile-screen.component';
+import { MoneyScreenComponent } from './screen-components/money-screen/money-screen.component';
+import { KeepScreenComponent } from './screen-components/keep-screen/keep-screen.component';
+import { GrowScreenComponent } from './screen-components/grow-screen/grow-screen.component';
+import { MakeScreenComponent } from './screen-components/make-screen/make-screen.component';
 
 
 
@@ -27,6 +31,10 @@ import { MobileScreenComponent } from './components/mobile-screen/mobile-screen.
     GrowComponent,
     AboutComponent,
     MobileScreenComponent,
+    MoneyScreenComponent,
+    KeepScreenComponent,
+    GrowScreenComponent,
+    MakeScreenComponent,
 
   ],
   imports: [
