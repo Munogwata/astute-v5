@@ -36,6 +36,7 @@ a {
 
 .content {
     display: flex;
+    justify-content: center;
     height: 740px;
     width: 100%;
     border-bottom: 1px solid general.$black;
@@ -61,6 +62,9 @@ a {
     color: general.$primary-blue;
     text-decoration: underline;
 }
+
+
+
 
 
 //responsive tablet

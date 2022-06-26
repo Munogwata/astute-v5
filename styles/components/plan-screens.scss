@@ -1,0 +1,156 @@
+@use '../../styles/abstracts/index.scss' as general;
+
+.cardContainer {
+    width: 366px;
+    height: 77px;
+    background-color: general.$orange200;
+    border: 0.5px solid general.$orange800;
+    border-radius: 5px;
+    margin-top: general.$default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cardContainer--content {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+}
+
+.goal-label {
+    @include general.small-body-bold;
+    margin-bottom: general.$small;
+    display: flex;
+    justify-content: flex-start;
+    width: 350px;
+    color: general.$orange500;
+}
+
+.goal-amount {
+    @include general.default-body-bold;
+    margin-bottom: general.$small;
+    display: inline;
+    color: general.$orange500;
+}
+
+.recommendation {
+    width: 100%;
+    @include general.small-body-regular;
+    color: general.$black;
+    display: flex;
+    margin-top: general.$default;
+}
+
+.full-content {
+    width: 100%;
+    height: 470px;
+    background-color: yellow;
+}
+
+@mixin tabsContent {
+    @include general.small-body-bold;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    width: fit-content;
+    height: 32px;
+    align-items: center;
+}
+
+.tabRow {
+    display: flex;
+    justify-content: space-between;
+    margin-top: general.$default
+}
+
+.active-smallTab {
+    @include tabsContent;
+    color: general.$orange500;
+    background-color: general.$orange200;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.nonactive-smallTab {
+    @include tabsContent;
+    color: general.$green800;
+    background-color: general.$green200;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.planContainer {
+    width: 366px;
+    height: 246px;
+    background-color: white;
+    box-shadow: 0px 2px 8px rgba(24, 24, 22, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: general.$default;
+
+}
+
+.plan-label {
+    @include general.small-body-regular;
+}
+
+.planContainer-content {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.planContainer-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: general.$small;
+}
+
+.goal-amount-black {
+    @include general.default-body-bold;
+    margin-bottom: general.$small;
+    display: inline;
+}
+
+.row-divided {
+    display: flex;
+
+}
+
+.row-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+.circle-button {
+    border-radius: 50%;
+    background-color: general.$green200;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin-right: general.$small;
+    justify-content: center;
+    align-items: center;
+}
+
+.addbutton-row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+}

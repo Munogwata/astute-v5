@@ -5,9 +5,17 @@
     </span>
 
     <span class="content">
-        <span *ngIf="router.url=='/make'">
-            just to test
-        </span>
+        <!--money screen-->
+
+        <app-money-screen *ngIf="router.url=='/'">
+
+        </app-money-screen>
+
+        <!--keep screen-->
+        <app-keep-screen *ngIf="router.url=='/keep'">
+
+        </app-keep-screen>
+
     </span>
 
     <span class="menu-bar">

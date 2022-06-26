@@ -1,1 +1,60 @@
-<p>keep-screen works!</p>
+<div class="screen-container">
+    <div class="screen-Heading--orange">
+        Pay yourself first
+    </div>
+
+    <span class="screen-smallLabels">
+        We help you keep your money by helping you manage
+        <span class="screen-smallLabels--underlined">
+            your savings
+        </span>
+        &nbsp;and
+        <span class="screen-smallLabels--underlined">
+            your debts
+        </span>
+        . We are also on the way of helping
+        you do
+        the same for your
+        <span class="screen-smallLabels--underlined">
+            insurance policies
+        </span>
+        .
+    </span>
+
+
+    <!-- the tabs savings & debt-->
+    <span class="button-row">
+        <button *ngIf='savingsOpen' (click)="toggleSaveClose()" class="activeTab">
+            Savings
+        </button>
+
+        <button *ngIf='savingsClose' (click)="toggleSaveOpen()" class="non-activeTab">
+            Savings
+        </button>
+
+
+        <button *ngIf="debtOpen" (click)=" toggleDebtClose()" class="activeTab">
+            Debt
+        </button>
+
+        <button *ngIf="debtClose" (click)=" toggleDebtOpen()" class="non-activeTab">
+            Debt
+        </button>
+
+
+    </span>
+
+    <span *ngIf="debtOpen">
+        <app-debt-full-plan></app-debt-full-plan>
+    </span>
+
+    <span *ngIf="savingsOpen">
+        <app-plans-full-card>
+
+        </app-plans-full-card>
+    </span>
+
+
+
+
+</div>

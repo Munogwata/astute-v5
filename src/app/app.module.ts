@@ -16,6 +16,11 @@ import { MoneyScreenComponent } from './screen-components/money-screen/money-scr
 import { KeepScreenComponent } from './screen-components/keep-screen/keep-screen.component';
 import { GrowScreenComponent } from './screen-components/grow-screen/grow-screen.component';
 import { MakeScreenComponent } from './screen-components/make-screen/make-screen.component';
+import { ScreenCardsComponent } from './reusable-components/screen-cards/screen-cards.component';
+import { PlanTabsComponent } from './reusable-components/plan-tabs/plan-tabs.component';
+import { PlansFullCardComponent } from './reusable-components/plans-full-card/plans-full-card.component';
+import { DebtFullPlanComponent } from './reusable-components/debt-full-plan/debt-full-plan.component';
+
 
 
 
@@ -35,6 +40,13 @@ import { MakeScreenComponent } from './screen-components/make-screen/make-screen
     KeepScreenComponent,
     GrowScreenComponent,
     MakeScreenComponent,
+    ScreenCardsComponent,
+    PlanTabsComponent,
+    PlansFullCardComponent,
+    DebtFullPlanComponent,
+
+
+
 
   ],
   imports: [

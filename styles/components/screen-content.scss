@@ -1,5 +1,13 @@
 @use '../../styles/abstracts/index.scss' as general;
 
+.screen-container {
+    width: 366px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+}
+
 .screen-Heading {
     @include general.large-body-bold;
     margin-bottom: 24px;
@@ -7,15 +15,86 @@
     color: general.$black;
 }
 
+.screen-Heading--orange {
+    @include general.large-body-bold;
+    margin-bottom: 24px;
+    margin-top: 44px;
+    color: general.$orange500;
+}
+
 .screen-defaultLabels {
     @include general.default-body-bold;
     color: general.$primary-blue;
+    display: inline-block;
+    padding-bottom: general.$small;
+    margin-top: general.$default;
 }
 
 .screen-smallLabels {
     @include general.small-body-bold;
+    padding-bottom: general.$small;
+}
+
+.screen-smallLabels--underlined {
+    @include general.small-body-regular;
+    padding-bottom: general.$small;
+    text-decoration: underline;
 }
 
 .screen-bodyContent {
     @include general.small-body-regular;
+}
+
+.screen-spacer {
+    display: inline;
+    height: 16px;
+}
+
+.status-button {
+    width: 364px;
+    height: 49px;
+    background-color: rgba(206, 240, 255, 0.45);
+    @include general.medium-body-bold;
+    color: general.$primary-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardContainer {
+    width: 365px;
+    height: 108px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardContainer-content {
+    width: 336px;
+    display: flex;
+    flex-direction: column;
+}
+
+.activeTab {
+    border-radius: 100px;
+    width: 98px;
+    height: 40px;
+    background-color: general.$green200;
+    margin-right: 10px;
+
+}
+
+.non-activeTab {
+    border-radius: 100px;
+    width: 98px;
+    height: 40px;
+    background-color: general.$neutral;
+    margin-right: 10px;
+
+}
+
+.button-row {
+    width: 100%;
 }
